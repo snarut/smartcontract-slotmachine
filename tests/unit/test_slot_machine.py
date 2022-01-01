@@ -35,4 +35,4 @@ def test_get_slot_chip(amount_deposit):
     slot_machine.getChip(amount_deposit, dai_token.address, {"from": account})
 
     #assert
-    slot_chip.balanceOf(account, {"from": account}) == amount_deposit
+    slot_chip.balanceOf(account, {"from": account}) > 0 
